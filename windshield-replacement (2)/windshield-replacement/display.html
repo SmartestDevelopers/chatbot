@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Property Examples</title>
+  <style>
+    /* General styling for consistency */
+    .container {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Example 1: display: block -->
+  <div class="container">
+    <h3>display: block</h3>
+    <p>Elements take up the full width and stack vertically.</p>
+    <div class="box" style="display: block;">Block Box 1</div>
+    <div class="box" style="display: block;">Block Box 2</div>
+  </div>
+
+  <!-- Example 2: display: inline -->
+  <div class="container">
+    <h3>display: inline</h3>
+    <p>Elements sit on the same line and only take the width of their content.</p>
+    <span class="box" style="display: inline;">Inline Box 1</span>
+    <span class="box" style="display: inline;">Inline Box 2</span>
+  </div>
+
+  <!-- Example 3: display: flex -->
+  <div class="container">
+    <h3>display: flex</h3>
+    <p>Elements are arranged in a flexible container, side by side by default.</p>
+    <div style="display: flex;">
+      <div class="box">Flex Box 1</div>
+      <div class="box">Flex Box 2</div>
+      <div class="box">Flex Box 3</div>
+    </div>
+  </div>
+
+  <!-- Example 4: display: grid -->
+  <div class="container">
+    <h3>display: grid</h3>
+    <p>Elements are arranged in a grid layout with defined rows and columns.</p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+      <div class="box">Grid Box 1</div>
+      <div class="box">Grid Box 2</div>
+      <div class="box">Grid Box 3</div>
+    </div>
+  </div>
+
+  <!-- Example 5: display: none -->
+  <div class="container">
+    <h3>display: none</h3>
+    <p>Element is completely hidden and takes no space in the layout.</p>
+    <div class="box">Visible Box</div>
+    <div class="box" style="display: none;">Hidden Box (You won't see this)</div>
+    <div class="box">Visible Box</div>
+  </div>
+</body>
+</html>
